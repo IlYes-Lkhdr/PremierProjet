@@ -1,0 +1,315 @@
+@import url(//fonts.googleapis.com/css?family=Oswald:400);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Fond sombre */
+    color: #fff; /* Couleur de texte blanc */
+    margin: 0;
+}
+
+.navbar {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.site-name {
+	font-family: 'Roboto', sans-serif;
+    margin-left: 10px; /* Ajustez la marge selon vos préférences */
+    font-weight: bold;
+    color: white; /* Couleur du texte */
+    font-size: 35px; /* Taille de la police */
+}
+
+.nav-link {
+    list-style: none;
+    margin-left: 120px;
+	text-align: left;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.nav-link-ap {
+    margin-left: 90px;
+	text-align: right;
+	font-size: 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #555; /* Fond sombre */
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Police sans-serif */
+    font-size: 34px; /* Taille du titre */
+    font-weight: bold; /* Gras */
+    color: #FFA500; 
+    text-transform: uppercase; /* Texte en majuscules */
+    text-align: left; /* Alignement centré */
+    margin-top: 50px; /* Marge supérieure */
+	margin-left: 10px;
+    margin-bottom: 15px; /* Marge inférieure */
+}
+
+.introduction {
+    text-align: left; /* Alignement à gauche */
+    margin-bottom: 20px; /* Marge en bas */
+    margin-left: 20px; /* Ajoute une marge à gauche */
+    margin-right: 190px; /* Ajoute une marge à droite */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Effet de transition au survol des images */
+.image-hover-effect {
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Lorsque l'image est survolée, appliquez l'effet de transition */
+.image-hover-effect:hover {
+    transform: scale(1.1); 
+}
+
+/* Style pour le paragraphe d'introduction */
+.intro-paragraph {
+    max-width: 1800px; /* Largeur maximale du paragraphe */
+    padding: 20px; /* Rembourrage intérieur */
+    font-family: Georgia, serif; /* Police serif */
+    font-size: 18px; /* Taille de la police */
+    line-height: 1.6; /* Espacement des lignes */
+    text-align: left;	
+	margin-left: 15px;
+    color: #FFF; /* Couleur du texte blanc */
+}
+
+.container-img {
+    background-color: #333; /* Couleur de fond sombre */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 10px; /* Coins arrondis */
+    margin-top: 20px; /* Marge supérieure */
+}
+
+.player-title {
+    font-family: 'Arial', sans-serif; /* Police de caractère */
+    font-size: 20px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    color: #FFA500; /* Couleur du texte */
+    margin-bottom: 10px; /* Marge inférieure */
+}
+
+.description2 {
+	max-width: 400px;
+    font-family: 'Arial', sans-serif; /* Police de caractère */
+    font-size: 14px; /* Taille de la police */
+    color: white; /* Couleur du texte */
+    line-height: 1.5; /* Hauteur de ligne */
+	margin-top: 25px;
+}
+
+.player-block {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+	position: relative;
+    overflow: hidden;
+}
+.messi-block, .ronaldo-block, .neymar-block {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; /* Ajout de marge en bas pour séparer les blocs */
+}
+
+.messi-block:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #fc4a1a 50%, #f7b733 50%);
+    transform: skewY(-4deg);
+    z-index: -1;
+}
+
+.ronaldo-block:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #2b5876 50%, #4e4376 50%);
+    transform: skewY(-4deg);
+    z-index: -1;
+}
+
+.neymar-block:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #ff7e5f 50%, #feb47b 50%);
+    transform: skewY(-4deg);
+    z-index: -1;
+}
+
+/* Ajout de border-radius pour arrondir les coins des images */
+.messi-block img, .ronaldo-block img, .neymar-block img {
+    border-radius: 10px; /* Vous pouvez ajuster cette valeur selon votre préférence */
+}
+
+.presentation {
+    margin-top: 35px; /* Marge supérieure */
+}
+
+.second-title {
+    font-size: 20px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    color: #f0f0f0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Police sans-serif */
+    font-size: 28px; /* Taille du titre */
+    text-transform: uppercase; /* Texte en majuscules */
+    text-align: left; /* Alignement centré */
+	margin-left: 55px;
+    margin-top: 50px; /* Marge supérieure */
+    margin-bottom: 6px; /* Marge inférieure */
+}
+
+.phrase-pres {
+    max-width: 1400px; /* Largeur maximale du paragraphe */
+    padding: 20px; /* Rembourrage intérieur */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px; /* Taille de la police */
+    line-height: 1.6; /* Espacement des lignes */
+    text-align: left; /* Alignement justifié */
+	margin-top: 15px;
+	margin-left: 13px;
+    color: #FFF; /* Couleur du texte blanc */
+}
+
+.pres-paragraph {
+    max-width: 1400px; /* Largeur maximale du paragraphe */
+    padding: 20px; /* Rembourrage intérieur */
+    font-family: Georgia, serif; /* Police serif */
+    font-size: 18px; /* Taille de la police */
+    line-height: 1.6; /* Espacement des lignes */
+    text-align: left; /* Alignement justifié */
+	margin-top: 4px;
+	margin-left: 17px;
+    color: #FFF; /* Couleur du texte blanc */
+}
+
+.form {
+    margin-left: 50px; /* Marge à gauche */
+    background-color: #333; /* Couleur de fond sombre */
+    color: #fff; /* Couleur de texte claire */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 15px; /* Coins arrondis */
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form select {
+    margin-bottom: 15px; /* Espacement entre chaque champ */
+    padding: 8px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis pour les champs de saisie */
+    border: none; /* Supprime la bordure par défaut */
+    background-color: #555; /* Couleur de fond pour les champs de saisie */
+    color: #fff; /* Couleur de texte */
+}
+
+.form input[type="submit"] {
+    padding: 10px 20px; /* Espacement intérieur */
+    border: none; /* Supprime la bordure */
+    border-radius: 6px; /* Coins arrondis */
+    background-color: #FFA500; /* Couleur de fond */
+    color: #fff; /* Couleur de texte */
+    cursor: pointer; /* Curseur pointeur au survol */
+}
+
+/* Style pour le bouton de soumission */
+.form button[type="submit"] {
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Rembourrage intérieur */
+    border: none; /* Suppression de la bordure */
+    border-radius: 4px; /* Arrondi des coins */
+    cursor: pointer; /* Curseur au survol */
+}
+
+/* Style pour le bouton de réinitialisation */
+.form button[type="reset"] {
+    background-color: #f44336; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Rembourrage intérieur */
+    border: none; /* Suppression de la bordure */
+    border-radius: 4px; /* Arrondi des coins */
+    cursor: pointer; /* Curseur au survol */
+}
+
+
+.form input[type="submit"]:hover {
+    background-color: #FFD700; /* Couleur de fond au survol */
+}
+
+.selection{
+	color: #003366;
+}
+
+.footer {
+    background-color: #333; /* Fond sombre */
+	font-size: 12px;
+    color: #fff; /* Couleur de texte blanc */
+    padding: 10px 0; /* Espacement intérieur */
+	margin-top: 55px;
+    text-align: center; /* Alignement centré */
+}
+
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    background-color: #007bff;
+    color: #fff;
+	margin-left: 50px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
